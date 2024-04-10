@@ -1,0 +1,80 @@
+<html>
+<head><title>Testing</title></head>
+<body bgcolor="white">
+    <h1 align=center>Test Page for 403 Errors</h1>
+    <style>
+        .events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.event-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: 280px;
+  background: #fff3f3;
+}
+
+/* .event-card :hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+  }*/
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.event-card .content {
+  padding: 10px;
+}
+
+.event-card h3 {
+  font-size: 18px;
+  height: 45px;
+}
+
+.event-card p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.event-card .button-container {
+  text-align: center;
+}
+
+.event-card .button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+    </style>
+
+<div class="events-container" style="margin-top: 90px">
+      <div class="event-card">
+        <img src="./images/eve2.avif" alt="Event 1" />
+        <div class="content">
+          <h3>
+           
+          </h3>
+          <p></p>
+          <div class="button-container">
+            <a href="/ustawi/fullstack/event.php?id=<?php echo $event['id'] ?>" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+    </html>
